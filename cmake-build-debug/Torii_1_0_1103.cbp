@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Torii_1_0_1103"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/mikasa/CLionProjects/Torii_1.0_1103/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/mikasa/CLionProjects/Torii_1.0_1103/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/mikasa/CLionProjects/Torii_1.0_1103/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/mikasa/CLionProjects/Torii_1.0_1103/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/mikasa/CLionProjects/Torii_1.0_1103/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/mikasa/CLionProjects/Torii_1.0_1103/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/mikasa/CLionProjects/Torii_1.0_1103/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/mikasa/CLionProjects/Torii_1.0_1103/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/mikasa/CLionProjects/Torii_1.0_1103/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/mikasa/CLionProjects/Torii_1.0_1103/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/mikasa/CLionProjects/Torii_1.0_1103/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/mikasa/CLionProjects/Torii_1.0_1103/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/mikasa/CLionProjects/Torii_1.0_1103/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/mikasa/CLionProjects/Torii_1.0_1103/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/mikasa/CLionProjects/Torii_1.0_1103/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Torii_1_0_1103">
+				<Option output="/home/mikasa/CLionProjects/Torii_1.0_1103/cmake-build-debug/Torii_1_0_1103" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mikasa/CLionProjects/Torii_1.0_1103/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/mikasa/CLionProjects/Torii_1.0_1103/./Ctest-master"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/mikasa/CLionProjects/Torii_1.0_1103/cmake-build-debug/Makefile&quot;  VERBOSE=1 Torii_1_0_1103"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/mikasa/CLionProjects/Torii_1.0_1103/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/mikasa/CLionProjects/Torii_1.0_1103/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/mikasa/CLionProjects/Torii_1.0_1103/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Torii_1_0_1103/fast">
+				<Option output="/home/mikasa/CLionProjects/Torii_1.0_1103/cmake-build-debug/Torii_1_0_1103" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mikasa/CLionProjects/Torii_1.0_1103/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/mikasa/CLionProjects/Torii_1.0_1103/./Ctest-master"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/mikasa/CLionProjects/Torii_1.0_1103/cmake-build-debug/Makefile&quot;  VERBOSE=1 Torii_1_0_1103/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/mikasa/CLionProjects/Torii_1.0_1103/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/mikasa/CLionProjects/Torii_1.0_1103/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/mikasa/CLionProjects/Torii_1.0_1103/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/Analyse.cpp">
+			<Option target="Torii_1_0_1103"/>
+		</Unit>
+		<Unit filename="/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/Analyse.h">
+			<Option target="Torii_1_0_1103"/>
+		</Unit>
+		<Unit filename="/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/Analyse_two.cpp">
+			<Option target="Torii_1_0_1103"/>
+		</Unit>
+		<Unit filename="/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/Config.cpp">
+			<Option target="Torii_1_0_1103"/>
+		</Unit>
+		<Unit filename="/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/Config.h">
+			<Option target="Torii_1_0_1103"/>
+		</Unit>
+		<Unit filename="/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/File.cpp">
+			<Option target="Torii_1_0_1103"/>
+		</Unit>
+		<Unit filename="/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/File.h">
+			<Option target="Torii_1_0_1103"/>
+		</Unit>
+		<Unit filename="/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/InitConfig.cpp">
+			<Option target="Torii_1_0_1103"/>
+		</Unit>
+		<Unit filename="/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/InitConfig.h">
+			<Option target="Torii_1_0_1103"/>
+		</Unit>
+		<Unit filename="/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/MyAnalysisNew.cpp">
+			<Option target="Torii_1_0_1103"/>
+		</Unit>
+		<Unit filename="/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/MyAnalysisNew.h">
+			<Option target="Torii_1_0_1103"/>
+		</Unit>
+		<Unit filename="/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/MyCThreadTest.cpp">
+			<Option target="Torii_1_0_1103"/>
+		</Unit>
+		<Unit filename="/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/MyCThreadTest.h">
+			<Option target="Torii_1_0_1103"/>
+		</Unit>
+		<Unit filename="/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/MyController.cpp">
+			<Option target="Torii_1_0_1103"/>
+		</Unit>
+		<Unit filename="/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/MyController.h">
+			<Option target="Torii_1_0_1103"/>
+		</Unit>
+		<Unit filename="/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/MyFuncTest.c">
+			<Option target="Torii_1_0_1103"/>
+		</Unit>
+		<Unit filename="/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/MyFuncTest.h">
+			<Option target="Torii_1_0_1103"/>
+		</Unit>
+		<Unit filename="/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/Myserver.cpp">
+			<Option target="Torii_1_0_1103"/>
+		</Unit>
+		<Unit filename="/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/Myserver.h">
+			<Option target="Torii_1_0_1103"/>
+		</Unit>
+		<Unit filename="/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/ReadHtml.cpp">
+			<Option target="Torii_1_0_1103"/>
+		</Unit>
+		<Unit filename="/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/ReadHtml.h">
+			<Option target="Torii_1_0_1103"/>
+		</Unit>
+		<Unit filename="/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/ServerSocket.cpp">
+			<Option target="Torii_1_0_1103"/>
+		</Unit>
+		<Unit filename="/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/ThreadPool.c">
+			<Option target="Torii_1_0_1103"/>
+		</Unit>
+		<Unit filename="/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/ThreadPool.h">
+			<Option target="Torii_1_0_1103"/>
+		</Unit>
+		<Unit filename="/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/Time.cpp">
+			<Option target="Torii_1_0_1103"/>
+		</Unit>
+		<Unit filename="/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/Time.h">
+			<Option target="Torii_1_0_1103"/>
+		</Unit>
+		<Unit filename="/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/do_analyse.cpp">
+			<Option target="Torii_1_0_1103"/>
+		</Unit>
+		<Unit filename="/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/do_analyse.h">
+			<Option target="Torii_1_0_1103"/>
+		</Unit>
+		<Unit filename="/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/do_servlet.cpp">
+			<Option target="Torii_1_0_1103"/>
+		</Unit>
+		<Unit filename="/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/do_servlet.h">
+			<Option target="Torii_1_0_1103"/>
+		</Unit>
+		<Unit filename="/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/doepoll.cpp">
+			<Option target="Torii_1_0_1103"/>
+		</Unit>
+		<Unit filename="/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/doepoll.h">
+			<Option target="Torii_1_0_1103"/>
+		</Unit>
+		<Unit filename="/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/epoll.cpp">
+			<Option target="Torii_1_0_1103"/>
+		</Unit>
+		<Unit filename="/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/epoll.h">
+			<Option target="Torii_1_0_1103"/>
+		</Unit>
+		<Unit filename="/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/mythread.cpp">
+			<Option target="Torii_1_0_1103"/>
+		</Unit>
+		<Unit filename="/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/mythread.h">
+			<Option target="Torii_1_0_1103"/>
+		</Unit>
+		<Unit filename="/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/redis.cpp">
+			<Option target="Torii_1_0_1103"/>
+		</Unit>
+		<Unit filename="/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/servlet.cpp">
+			<Option target="Torii_1_0_1103"/>
+		</Unit>
+		<Unit filename="/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/servlet.h">
+			<Option target="Torii_1_0_1103"/>
+		</Unit>
+		<Unit filename="/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/simple_thread_pool.cpp">
+			<Option target="Torii_1_0_1103"/>
+		</Unit>
+		<Unit filename="/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/simple_thread_pool.h">
+			<Option target="Torii_1_0_1103"/>
+		</Unit>
+		<Unit filename="/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/spellresponse.cpp">
+			<Option target="Torii_1_0_1103"/>
+		</Unit>
+		<Unit filename="/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/spellresponse.h">
+			<Option target="Torii_1_0_1103"/>
+		</Unit>
+		<Unit filename="/home/mikasa/CLionProjects/Torii_1.0_1103/main.cpp">
+			<Option target="Torii_1_0_1103"/>
+		</Unit>
+		<Unit filename="/home/mikasa/CLionProjects/Torii_1.0_1103/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/Analyse.h
+
+/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/MyController.h
+stdio.h
+/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/stdio.h
+
+/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/ReadHtml.h
+
+/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/do_analyse.cpp
+cstring
+-
+MyController.h
+/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/MyController.h
+Analyse.h
+/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/Analyse.h
+ReadHtml.h
+/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/ReadHtml.h
+servlet.h
+/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/servlet.h
+
+/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/servlet.h
+Analyse.h
+/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/Analyse.h
+
