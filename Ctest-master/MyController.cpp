@@ -6,12 +6,26 @@
 #include "stdio.h"
 #include "stdarg.h"
 #include "string.h"
+#include "InitConfig.h"
 #include "strings.h"
 #include "MyController.h"
-
+#include "math.h"
 ServletMapping * servletHeading;
 ServletMapping * servletIndex;
-void RequestMapping(char * value,void *(*function)(void * ),...){
+void do_result(thread * t){
+    char * final_conffilepath=get_conffilepath();
+    int target_size=strlen(final_conffilepath)+strlen(t->returnvalue)+5;
+    char * target=(char *)malloc(target_size);
+    memset(target,0,target_size);
+    strcat(target,final_conffilepath);
+    strcat(target,t->returnvalue);
+    strcat(target,".html");
+
+    printf("attribute is %s\n",t->attribute->value);
+
+}
+
+void RequestMapping(char * value,void *(*function)(void * ),thread * t){
     if (servletHeading==NULL){
         servletHeading=(ServletMapping *)malloc(sizeof(ServletMapping));
         servletIndex=servletHeading;
@@ -25,7 +39,7 @@ void RequestMapping(char * value,void *(*function)(void * ),...){
     ServletMapping * servlet=(ServletMapping *)malloc(sizeof(ServletMapping));
     servlet->value=value;
     servlet->function=function;
-    va_start(servlet->args,function);
+    servlet->args=t;
     if (servletHeading->listsize<=64){
         servletIndex->next=servlet;
         servletIndex=servlet;
@@ -39,7 +53,8 @@ void doRequestMapping(char * value){
         ServletMapping * index=servletHeading->next;
         while (index!=NULL){
             if (!strcmp(index->value,value)){
-                index->function(index->args);
+                index->args=(thread *)index->function(index->args);
+                do_result(index->args);
                 break;
             } else{
                 index=index->next;
@@ -49,3 +64,4 @@ void doRequestMapping(char * value){
 
     }
 }
+

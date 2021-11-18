@@ -27,7 +27,8 @@ void modify_event(int epollfd,int fd,int state);
 /*IO多路复用epoll*/
 void do_epoll(int listenfd);
 /*事件处理函数*/
-void handle_eventsserver(thread * t);
+void handle_eventsserver(thread * t);void handle_eventsserver(int epollfd,struct epoll_event *events,int num,int listenfd,char *buf);
+
 /*处理接收到的连接*/
 void handle_accpet(int epollfd, int listenfd, char *string);
 /*读处理*/
@@ -47,6 +48,8 @@ void do_epoll(int listenfd){
     epollfd = epoll_create(FDSIZE);//该函数生成一个epoll专用的文件描述符，其中的参数是指定生成描述符的最大范围
     /*添加监听描述符事件*/
     add_event(epollfd,listenfd,EPOLLIN);
+    Threadpool * threadPool=get_instacne_threadPool(20,20);
+
     while(1){
         /*获取已经准备好的描述符事件*/
         ret = epoll_wait(epollfd,events,EPOLLEVENTS,-1);//该函数用于轮询i/O事件的发生。参数：epfd：有epoll_create生成的epoll专用的文件描述符；epoll_event：用于回传代处理事件的数组；maxevents：每次能处理事件数；timeout：等待i/o事件发生的超时值。
@@ -55,13 +58,14 @@ void do_epoll(int listenfd){
             close(listenfd);
             break;
         }
+
 //        printf("afterlaiguo：%s\n",buf);
-        Threadpool * threadPool=get_instacne_threadPool(20,20);
 //        printf("epollfd fd %d\n",epollfd);
-        thread * t=(thread *)malloc(sizeof(thread));
-        init_thread_arg(t,5,&epollfd,events,&ret,&listenfd,buf);
-        thread_pool_submit(threadPool, reinterpret_cast<void *(*)(void *)>(handle_eventsserver),t);
-//        handle_eventsserver(epollfd,events,ret,listenfd,buf);//重点注意这个ret，它返回的是已经有事儿的fd的个数
+//        thread * t=(thread *)malloc(sizeof(thread));
+//        init_thread_arg(t,5,&epollfd,events,&ret,&listenfd,buf);
+//        thread_pool_submit(threadPool, reinterpret_cast<void *(*)(void *)>(handle_eventsserver),t);
+//        free(t);
+        handle_eventsserver(epollfd,events,ret,listenfd,buf);//重点注意这个ret，它返回的是已经有事儿的fd的个数
 //        printf("beforlaiguo：%s\n",buf);
         //这样一会儿轮循的就不是所有的fd了
     }
@@ -72,21 +76,8 @@ void do_epoll(int listenfd){
 //
 //    printf("a %d\n",a);
 //}
-void handle_eventsserver(thread * t){
+void handle_eventsserver(int epollfd,struct epoll_event *events,int num,int listenfd,char *buf){
     //int epollfd,struct epoll_event *events,int num,int listenfd,char *buf
-//    void * arg=va_arg(args,void *);
-    thread * ptr=t;
-    int epollfd=*((int *)ptr->arg);
-//    int epollfd=*(int *)ptr->arg;
-
-    ptr=ptr->next;
-    struct epoll_event *events=(struct epoll_event *)ptr->arg;
-    ptr=ptr->next;
-    int num=*(int *)ptr->arg;
-    ptr=ptr->next;
-    int listenfd=*(int *)ptr->arg;
-    ptr=ptr->next;
-    char * buf=(char *)ptr->arg;
     int i;
     int fd;
     /*进行选好遍历*/

@@ -48,10 +48,16 @@ typedef struct Grammar{
     int valuetype;
     int operatortype;
 };
+
+typedef struct Myattribute{
+    void * context;
+    int type;
+};
 typedef struct preAttribute{
     char * key;
     void * value;
 };
+
 preAttribute * preAttributes[20];
 int indexpAttr=0;
 
@@ -189,7 +195,7 @@ void setAttribute(char key[],void * target){
     }
     preAttribute * pre=(preAttribute *) malloc(sizeof(preAttribute));
     pre->key=key;
-    pre->value=((Mattribute *)target)->context;
+    pre->value=((Myattribute *)target)->context;
     preAttributes[indexpAttr++]=pre;
     printf("setAAAA\n");
     printf("%s\n",(pre->value));

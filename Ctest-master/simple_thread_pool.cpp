@@ -82,6 +82,7 @@ void thread_pool_submit(Threadpool * threadPool,void *(*function) (void *),threa
     pthread_mutex_lock(&threadPool->ops_queue_index);
     if (threadPool->queue_index>=threadPool->queue_position_max){
         perror("[ERROR]: the queue is filled\n");
+        printf("[ERROR] the queue_index is %d\n",threadPool->queue_index);
         pthread_mutex_unlock(&threadPool->submit_lock);
         return;
     }

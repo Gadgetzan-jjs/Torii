@@ -6,10 +6,8 @@ extern void open(char * filepath,char * uri,char * path);
 extern void setAttribute(char key[],void * value);
 extern void close();
 
-typedef struct Mattribute{
-    void * context;
-    int type;
-};
+
+
 #define Interger 100;
 #define String 101;
 

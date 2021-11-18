@@ -40,8 +40,6 @@ int init_config(char * filepath){
     int portlen=strlen(config->port);
     int port=0;
     for (int i = 0; i < portlen; ++i) {
-//        printf("%d\n",config->port[i]-48);
-//        printf("%d\n",(10 << (portlen-i)));
         port+=(pow(10,(portlen-i-1)))*(config->port[i]-48);
     }
     return port;

@@ -10,27 +10,28 @@
 #include "iostream"
 #include "MyController.h"
 using namespace std;
-int myfun(va_list vaList){
-//    void *agenum=va_arg(vaList, void *);
-//    int  argnum= (int)(agenum);
-//    printf("argnum is %d\n",argnum);
-//    for (int i = 0; i < argnum; ++i) {
-////        printf("xixi\n");
-//    }
-
-    void * a=va_arg(vaList,void *);
-    void * b=va_arg(vaList,void *);
-    printf("fun a is %d and %d\n",a,b);
-
+thread *  myfun(thread * t){
+    void * arg;
+    for (int i = 0; i < 2; ++i) {
+            arg=t->arg;
+            printf("%s\n",arg);
+            t=t->next;
+    }
+    t->returnvalue=(char *)malloc(5);
+    t->returnvalue="hello";
+    t->attribute=(to_attribute *)malloc(sizeof(to_attribute));
+    t->attribute->key="username";
+    t->attribute->value=(void *)"haibara";
     sleep(3);
+    return t;
 }
-int other(va_list vaList){
-    void * a=va_arg(vaList,void *);
-    void * b=va_arg(vaList,void *);
-    printf("fun a is %d and %d\n",a,b);
-    sleep(1);
-
-}
+//int other(va_list vaList){
+//    void * a=va_arg(vaList,void *);
+//    void * b=va_arg(vaList,void *);
+//    printf("fun a is %d and %d\n",a,b);
+//    sleep(1);
+//
+//}
 //void funcc(void *(*function)(void *),...) {
 //
 //    Thread_Pool_task_t *task = (Thread_Pool_task_t *) malloc(sizeof(Thread_Pool_task_t));
@@ -39,13 +40,30 @@ int other(va_list vaList){
 //    va_start(args, function);
 //    task->function(args);
 //}
-
 int main() {
-    std::cout << "Hello, World!" << std::endl;
 
-    RequestMapping("/hello", reinterpret_cast<void *(*)(void *)>(myfun), "hello", "world");
+    thread * t=(thread *)malloc(sizeof(thread));
+    init_thread_arg(t,2,"hello", "world");
+    RequestMapping("/hello", reinterpret_cast<void *(*)(void *)>(myfun), t);
     serverepoll("/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/Toriiconf");
 
-//    serverepoll()
+
+
+
+
+    ////jinja2解释器测试代码
+
+
+//    char * path="/home/mikasa/Gadgetzan-jjs/CLionProjects/Torii/resources/";
+//    open("/home/mikasa/Gadgetzan-jjs/CLionProjects/Torii/resources/Test.html", nullptr, path);
+//    Mattribute * attribute=(Mattribute *)malloc(sizeof(Mattribute));
+//    char * afaf="1111";
+//    attribute->context=afaf;
+//    attribute->type=String;
+//    printf("%s\n",(char *)attribute->context);
+//    setAttribute(":name",attribute);
+//    close();
+//    sleep(10);
+
     return 0;
 }

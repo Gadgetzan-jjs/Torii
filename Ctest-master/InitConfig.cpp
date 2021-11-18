@@ -10,6 +10,14 @@
 //#include "cstring"
 //using namespace std;
 #include <bits/types/FILE.h>
+char * final_ipaddress=(char * )malloc(15);
+char * final_port=(char *)malloc(6);
+//static char * final_conffilepath=(char *)malloc(101);
+
+static char final_conffilepath[101];
+char * get_conffilepath(){
+    return final_conffilepath;
+}
 void confconfig(Config * config,char * filepath) {
     FILE *fp;
     if ((fp = fopen(filepath, "r"))==NULL){
@@ -60,4 +68,10 @@ void confconfig(Config * config,char * filepath) {
             }
         }
     }
+    int conffp_len=strlen(config->conffilepath);
+    int i;
+    for (i = 0; i < conffp_len; ++i) {
+        final_conffilepath[i]=config->conffilepath[i];
+    }
+    final_conffilepath[i]='\0';
 }

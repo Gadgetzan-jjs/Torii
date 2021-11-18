@@ -6,27 +6,53 @@
 
 #IncludeRegexTransform: 
 
-/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/Analyse.h
+../Ctest-master/InitConfig.h
+stdlib.h
+../Ctest-master/stdlib.h
 
-/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/MyController.h
+../Ctest-master/MyAnalysisNew.h
+
+../Ctest-master/MyController.h
 stdio.h
-/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/stdio.h
+../Ctest-master/stdio.h
+mythread.h
+../Ctest-master/mythread.h
 
-/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/ReadHtml.h
+../Ctest-master/Socket.h
 
-/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/do_analyse.cpp
-cstring
+../Ctest-master/mythread.h
+MyAnalysisNew.h
+../Ctest-master/MyAnalysisNew.h
+
+../Ctest-master/simple_thread_pool.h
+pthread.h
+../Ctest-master/pthread.h
+stdarg.h
+../Ctest-master/stdarg.h
+mythread.h
+../Ctest-master/mythread.h
+
+/home/mikasa/CLionProjects/Torii_1.0_1103/main.cpp
+iostream
 -
+Socket.h
+/home/mikasa/CLionProjects/Torii_1.0_1103/Socket.h
+InitConfig.h
+/home/mikasa/CLionProjects/Torii_1.0_1103/InitConfig.h
+stdarg.h
+-
+unistd.h
+/home/mikasa/CLionProjects/Torii_1.0_1103/unistd.h
+stdlib.h
+/home/mikasa/CLionProjects/Torii_1.0_1103/stdlib.h
+strings.h
+/home/mikasa/CLionProjects/Torii_1.0_1103/strings.h
+string.h
+/home/mikasa/CLionProjects/Torii_1.0_1103/string.h
+simple_thread_pool.h
+/home/mikasa/CLionProjects/Torii_1.0_1103/simple_thread_pool.h
+iostream
+/home/mikasa/CLionProjects/Torii_1.0_1103/iostream
 MyController.h
-/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/MyController.h
-Analyse.h
-/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/Analyse.h
-ReadHtml.h
-/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/ReadHtml.h
-servlet.h
-/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/servlet.h
-
-/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/servlet.h
-Analyse.h
-/home/mikasa/CLionProjects/Torii_1.0_1103/Ctest-master/Analyse.h
+/home/mikasa/CLionProjects/Torii_1.0_1103/MyController.h
 
